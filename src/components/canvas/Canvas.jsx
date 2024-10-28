@@ -161,12 +161,13 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
               <h3>Get in touch</h3>
               <ul>
                 <li>
-                  <a href="tel:02094980547">+(02) - 094 980 547</a>
+                  <a href="tel:02094980547">(+92) - 330 7474 614</a>
                 </li>
                 <li>
-                  <a href="mailto:info@extradesign.com">info@extradesign.com</a>
+                  <a href="mailto:hello@dhsol.net">hello@dhsol.net</a>
                 </li>
-                <li>230 Norman Street New York, QC (USA) H8R 1A1</li>
+                <li>1309 Coffeen Ave. Sheridan, Wyoming , USA 82801
+                </li>
               </ul>
             </div>
             <Image
