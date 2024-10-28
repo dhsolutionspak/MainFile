@@ -3,7 +3,7 @@
 export async function getServerSideProps() {
   return {
     redirect: {
-      destination: '/digital-agency',
+      destination: '/home',
       permanent: false, // Set to true if it's a permanent redirect (308)
     },
   };
