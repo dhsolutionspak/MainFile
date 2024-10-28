@@ -98,7 +98,7 @@ export default function Footer3() {
                       USA 82801</li>
                       <li>
                         <a href="tel:+923146455565" className="phone">
-                          (+92) 314 - 6455 - 65{" "}
+                          (+92) 330 - 7474 - 614{" "}
                         </a>
                       </li>
                       <li>
@@ -123,7 +123,7 @@ export default function Footer3() {
                       </Link>
                     </div>
                     <h3 className="contact-time">09 : 00 AM - 10 : 30 PM</h3>
-                    <h4 className="contact-day">Saturday - Thursday</h4>
+                    <h4 className="contact-day">Monday - Friday</h4>
                   </div>
 
                   <div className="footer__copyright">
