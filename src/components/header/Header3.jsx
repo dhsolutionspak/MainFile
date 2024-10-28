@@ -3,7 +3,7 @@ import Canvas from "../canvas/Canvas";
 import Link from "next/link";
 import LogoWhite from "../../../public/assets/imgs/logo/site-logo-white.png";
 import MenuWhite from "../../../public/assets/imgs/icon/menu-white.png";
-import MobileLogo from "../../../public/assets/imgs/icon/footer-logo-white.png";
+import MobileLogo from "../../../public/assets/imgs/logo/footer-logo-white.png";
 import Image from "next/image";
 
 export default function Header3() {
