@@ -150,6 +150,17 @@ const DigitalAgencyHero = () => {
   
 }
 
+.hero__sub-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #ffffff;
+    max-width: 410px;
+    position: absolute;
+    right: 60px;
+    bottom: 15px;
+}
+
       `}</style>
     </>
   );

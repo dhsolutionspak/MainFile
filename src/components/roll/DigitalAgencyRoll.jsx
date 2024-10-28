@@ -44,97 +44,97 @@ const DigitalAgencyRoll = () => {
           >
             <SwiperSlide>
               <div className="roll__slide">
-                <h2>Development</h2>
+                <h2>Website Development</h2>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="roll__slide">
-                <h2>Studio</h2>
+                <h2>App Development</h2>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="roll__slide">
-                <h2>Strategy</h2>
+                <h2>Artificial Intelligence</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Cyber Security</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Machine Leaning</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Data Science</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Digitalization</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Marketing</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Cloud Solutions</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>DevOps Solutions</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Automation</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>QA and Testing </h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Product Development</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>ECommerce</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Computer Vision</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>IT Consultancy</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Staff Augmentation </h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="roll__slide">
+                <h2>Web Applications</h2>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="roll__slide">
                 <h2>Branding</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Agency</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>typhography</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Design</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Interaction</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Element</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>DIgital SOlution</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Strategy</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Branding</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Agency</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Interaction</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>DIgital SOlution</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>typhography</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Design</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Interaction</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="roll__slide">
-                <h2>Element</h2>
               </div>
             </SwiperSlide>
           </Swiper>

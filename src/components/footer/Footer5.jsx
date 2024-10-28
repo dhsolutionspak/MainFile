@@ -1,146 +1,156 @@
-import { FreeMode, Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import ArrowRight from "../../../public/assets/imgs/portfolio/11/arrow-right.png";
 import Link from "next/link";
+import ThumbFooter from "../../../public/assets/imgs/thumb/footer.jpg";
+import FooterLogoWhite from "../../../public/assets/imgs/logo/footer-logo-white.png";
+import footer from "../../../public/assets/imgs/footer/footer.jpg";
 import Image from "next/image";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/free-mode";
-import { useEffect, useRef } from "react";
-
-export default function Footer5() {
-  const menuAnim = useRef();
-  const menuAnim2 = useRef();
-  useEffect(() => {
-    if (menuAnim.current) {
-      menuAnimation(menuAnim);
-    }
-    if (menuAnim2.current) {
-      menuAnimation(menuAnim2);
-    }
-  }, []);
-  const menuAnimation = (data) => {
-    let rootParent = data.current.children;
-    for (let i = 0; i < rootParent.length; i++) {
-      let firstParent = rootParent[i].children;
-      let arr = firstParent[0].textContent.split("")
-      let spanData = ''
-      for (let j = 0; j < arr.length; j++) {
-        if(arr[j] == ' ') {
-          spanData += `<span style='width:6px;'>${arr[j]}</span>`;
-        } else {
-          spanData += `<span>${arr[j]}</span>`;
-        }
-      }
-      let result = '<div class="menu-text">' + spanData + '</div>';
-      firstParent[0].innerHTML = result
-    }
-  };
+export default function Footer3() {
   return (
     <>
-      <footer className="footer__area-8 pt-120">
-        <div className="footer__top-2 text-anim">
-          <div className="contact_wrap">
-            <div className="roll__slider">
-              <Swiper
-                modules={[FreeMode, Autoplay]}
-                spaceBetween={60}
-                slidesPerView={1}
-                freeMode={true}
-                loop={true}
-                centeredSlides={true}
-                allowTouchMove={false}
-                speed={10000}
-                autoplay={{
-                  delay: 1,
-                  disableOnInteraction: true,
-                }}
-              >
-                <div className="swiper-wrapper">
-                  <SwiperSlide>
-                    <h2 className="rollslide_title-1">
-                      {"let's"} <span> contact </span>
-                    </h2>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <h2 className="rollslide_title-1">
-                      {"let's"} <span> contact </span>
-                    </h2>
-                  </SwiperSlide>
-                </div>
-              </Swiper>
-            </div>
+      <footer className="footer__area">
+        <div className="footer__top">
+          <div className="container footer-line"></div>
+            
+          <Image
+            priority
+            width={1160}
+            style={{ height: "auto" }}
+            src={footer}
+            alt="Footer Image"
+            data-speed="0.75"
+          />
+        </div>
 
-            <Link href="/contact" className="link">
-              click here
-            </Link>
-          </div>
-        </div>
-        <div className="footer_categories">
-          <div className="categories_item">
-            <h4 className="cat_title">useful links</h4>
-            <ul className="cat_links menu-anim" ref={menuAnim}>
-              <li>
-                <a href="#">company</a>
-              </li>
-              <li>
-                <a href="#">career</a>
-              </li>
-              <li>
-                <a href="#">privacy policy</a>
-              </li>
-              <li>
-                <a href="#">project</a>
-              </li>
-            </ul>
-          </div>
-          <div className="categories_item">
-            <h4 className="cat_title">follow us</h4>
-            <ul className="cat_links menu-anim" ref={menuAnim2}>
-              <li>
-                <a href="#">Facebook</a>
-              </li>
-              <li>
-                <a href="#">twitter</a>
-              </li>
-              <li>
-                <a href="#">instagram</a>
-              </li>
-              <li>
-                <a href="#">linkedin</a>
-              </li>
-            </ul>
-          </div>
-          <div className="categories_item l_item">
-            <h4 className="cat_title">newsletter</h4>
-            <div className="footer__subscribe-2">
-              <form action="#">
-                <input
-                  type="text"
-                  name="email"
-                  placeholder="Enter your email"
-                />
-                <button type="submit" className="submit">
-                  <Image
-                    priority
-                    style={{ width: "auto", height: "auto" }}
-                    src={ArrowRight}
-                    alt="Arrow Icon"
-                  />
-                </button>
-              </form>
+        <div className="footer__btm">
+          <div className="container">
+            <div className="row footer__row">
+              <div className="col-xxl-12">
+                <div className="footer__inner">
+                  <div className="footer__widget">
+                    <Image
+                      priority
+                      style={{ width: "auto", height: "auto" }}
+                      className="footer__logo"
+                      src={FooterLogoWhite}
+                      alt="Footer Logo"
+                    />
+                    <p>
+                      When do they work well, and when do they on us and
+                      finally, when do we actually need how can we avoid them.
+                    </p>
+                    <ul className="footer__social">
+                      <li>
+                        <a href="#">
+                          <span>
+                            <i className="fa-brands fa-facebook-f"></i>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>
+                            <i className="fa-brands fa-twitter"></i>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>
+                            <i className="fa-brands fa-instagram"></i>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>
+                            <i className="fa-brands fa-linkedin"></i>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="footer__widget-2">
+                    <h2 className="footer__widget-title">Information</h2>
+                    <ul className="footer__link">
+                      <li>
+                        <Link href="/about">About Company</Link>
+                      </li>
+                      <li>
+                        <Link href="/portfolio">Case Study</Link>
+                      </li>
+                      <li>
+                        <Link href="/career">Career</Link>
+                      </li>
+                      <li>
+                        <Link href="/blog">blog</Link>
+                      </li>
+                      <li>
+                        <Link href="/contact">contact</Link>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="footer__widget-3">
+                    <h2 className="footer__widget-title">Contact Us</h2>
+                    <ul className="footer__contact">
+                      <li>1309 Coffeen Ave. Sheridan, Wyoming ,
+                      USA 82801</li>
+                      <li>
+                        <a href="tel:+923146455565" className="phone">
+                          (+92) 314 - 6455 - 65{" "}
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mailto:hello@dhsol.net">
+                          hello@dhsol.net
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="footer__widget-4">
+                    <h2 className="project-title">
+                      Have a project in your mind?
+                    </h2>
+                    <div className="btn_wrapper">
+                      <Link
+                        href="/contact"
+                        className="wc-btn-primary btn-hover btn-item"
+                      >
+                        <span></span> contact us{" "}
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </Link>
+                    </div>
+                    <h3 className="contact-time">09 : 00 AM - 10 : 30 PM</h3>
+                    <h4 className="contact-day">Saturday - Thursday</h4>
+                  </div>
+
+                  <div className="footer__copyright">
+                    <p>
+                      © 2022 - 2025 | Alrights reserved by{" "}
+                      <a href="https:/dhsol.net/" target="_blank">
+                        DH Solutions LLC 
+                      </a>
+                    </p>
+                  </div>
+
+                  <div className="footer__subscribe">
+                    <form action="#">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                      />
+                      <button type="submit" className="subs-btn">
+                        <i className="fa-solid fa-paper-plane"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="footer__copyright-8">
-          <p>
-            © Alrights reserved by{" "}
-            <a href="https://wealcoder.com/" target="_blank">
-              Wealcoder
-            </a>
-          </p>
         </div>
       </footer>
     </>
