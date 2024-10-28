@@ -1,0 +1,59 @@
+{
+  "nav": [
+
+    {
+      "nav_name": "Home",
+      "link": "/digital-agency",
+      "type": "",
+      "sub_nav": []
+    },
+
+    {
+      "nav_name": "About",
+      "link": "/about",
+      "type": "",
+      "sub_nav": []
+    },
+
+    {
+      "nav_name": "Services",
+      "link": "/service-v5",
+      "type": "",
+      "sub_nav": []
+    },
+
+    {
+      "nav_name": "Portfolio",
+      "link": "/portfolio",
+      "type": "",
+      "sub_nav": []
+    },
+
+    {
+      "nav_name": "Team",
+      "link": "/team",
+      "type": "",
+      "sub_nav": []
+    },
+
+    {
+      "nav_name": "Careers",
+      "link": "/career",
+      "type": "",
+      "sub_nav": []
+    },
+
+    {
+      "nav_name": "Blog",
+      "link": "/blog",
+      "type": "",
+      "sub_nav": []
+    },
+    {
+      "nav_name": "Contact",
+      "link": "/contact",
+      "type": "",
+      "sub_nav": []
+    }
+  ]
+}
