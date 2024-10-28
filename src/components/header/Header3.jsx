@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import Canvas from "../canvas/Canvas";
+import Canvas from "../canvas/Canvas";      footer-logo-white
 import Link from "next/link";
 import LogoWhite from "../../../public/assets/imgs/logo/site-logo-white.png";
-import LogoWhite2 from "../../../public/assets/imgs/logo/site-logo-white-2.png";
 import MenuWhite from "../../../public/assets/imgs/icon/menu-white.png";
+import MobileLogo from "../../../public/assets/imgs/icon/footer-logo-white.png";
 import Image from "next/image";
 
 export default function Header3() {
@@ -62,7 +62,7 @@ export default function Header3() {
                 width={100}
                 height={33}
                 className="logo-secondary"
-                src={LogoWhite2}
+                src={MobileLogo}
                 alt="Moibile Logo"
               />
             </Link>
