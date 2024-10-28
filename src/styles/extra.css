@@ -360,7 +360,7 @@
 
 @media only screen and (min-width: 1400px) and (max-width: 1919px) {
   .offcanvas__menu {
-    padding-top: 0px;
+    padding-top: 15px;
   }
 
   .header_title > a {
@@ -383,7 +383,7 @@
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .offcanvas__menu {
-    padding-top: 0px;
+    padding-top: 15px;
   }
   .header_title > a {
     font-size: 48px;
@@ -405,7 +405,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .offcanvas__menu {
-    padding-top: 0px;
+    padding-top: 15px;
   }
   .header_title > a {
     font-size: 40px;
