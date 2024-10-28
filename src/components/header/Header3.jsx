@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Canvas from "../canvas/Canvas";      footer-logo-white
+import Canvas from "../canvas/Canvas";  
 import Link from "next/link";
 import LogoWhite from "../../../public/assets/imgs/logo/site-logo-white.png";
 import MenuWhite from "../../../public/assets/imgs/icon/menu-white.png";
