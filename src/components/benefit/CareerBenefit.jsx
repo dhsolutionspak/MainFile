@@ -27,7 +27,7 @@ const CareerBenefit = () => {
                   Development
                 </li>
                 <li>
-                  Healthy <br /> Food & Snacks
+                  Hybrid Working <br /> Enviroment
                 </li>
               </ul>
             </div>

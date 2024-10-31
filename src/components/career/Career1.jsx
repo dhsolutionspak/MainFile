@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 const Career1 = () => {
+  // Set an array for jobs, which will be empty if no jobs are available
+  const jobs = []; // Replace with job data if available
+
   return (
     <>
       <section className="job__area pt-130 pb-150" id="job_list">
@@ -15,68 +18,32 @@ const Career1 = () => {
               </div>
             </div>
             <div className="col-xxl-12">
-              <div className="job__list">
-                <Link href="/job-details">
-                  <div className="job__item">
-                    <p className="job__no">01</p>
-                    <h3 className="job__title">UI/UX Designer</h3>
-                    <h4 className="job__open">(02 Open Roles)</h4>
-                    <div className="job__link">
-                      <span>
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/job-details">
-                  <div className="job__item">
-                    <p className="job__no">02</p>
-                    <h3 className="job__title">Frontend Developer</h3>
-                    <h4 className="job__open">(07 Open Roles)</h4>
-                    <div className="job__link">
-                      <span>
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/job-details">
-                  <div className="job__item">
-                    <p className="job__no">03</p>
-                    <h3 className="job__title">Product Manager</h3>
-                    <h4 className="job__open">(15 Open Roles)</h4>
-                    <div className="job__link">
-                      <span>
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/job-details">
-                  <div className="job__item">
-                    <p className="job__no">04</p>
-                    <h3 className="job__title">JavaScript Engineer</h3>
-                    <h4 className="job__open">(03 Open Roles)</h4>
-                    <div className="job__link">
-                      <span>
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-                <Link href="/job-details">
-                  <div className="job__item">
-                    <p className="job__no">05</p>
-                    <h3 className="job__title">Joomla Developer</h3>
-                    <h4 className="job__open">(09 Open Roles)</h4>
-                    <div className="job__link">
-                      <span>
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </div>
+              {jobs.length > 0 ? (
+                <div className="job__list">
+                  {jobs.map((job, index) => (
+                    <Link href="/job-details" key={index}>
+                      <div className="job__item">
+                        <p className="job__no">{index + 1}</p>
+                        <h3 className="job__title">{job.title}</h3>
+                        <h4 className="job__open">({job.openRoles} Open Roles)</h4>
+                        <div className="job__link">
+                          <span>
+                            <i className="fa-solid fa-arrow-right"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <div className="no-jobs">
+                  <p>No job openings are available at the moment.</p>
+                  <p>
+                    If you’re interested in working with us, please send your resume to{" "}
+                    <a href="mailto:hr@dhsol.net">hr@dhsol.net</a>.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
