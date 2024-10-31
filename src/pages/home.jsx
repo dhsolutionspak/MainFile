@@ -76,11 +76,12 @@ const DigitalAgency = () => {
   }
   return (
     <div>
-      <Head>
-        <title>DH Solutions - The Custom Software Development Company</title>
-        <meta name="description" content="Digital Agency Description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+    <Head>
+    <title>DH Solutions - Custom Software Development Company</title>
+    <meta name="description" content="DH Solutions offers top-tier custom software, AI, and digital solutions to empower businesses worldwide. Partner with us for innovative and scalable digital transformations." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+</Head>
+
       <main>
         <div className="cursor" id="client_cursor">
           Play
