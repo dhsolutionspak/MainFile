@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -30,10 +31,6 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "sass": "^1.60.0"
-  },
-
-  "scripts": {
-  "postbuild": "next-sitemap"
-}
+  }
 
 }
