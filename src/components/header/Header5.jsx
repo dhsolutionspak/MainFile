@@ -43,7 +43,7 @@ export default function Header5() {
       <header className="header__area-2" ref={headerArea}>
         <div className="header__inner-5">
           <div className="header__logo-5">
-            <Link href="/digital-marketing" className="logo-dark">
+            <Link href="/digital-agency" className="logo-dark">
               <Image
                 priority
                 width={136}
@@ -52,7 +52,7 @@ export default function Header5() {
                 alt="Site Logo"
               />
             </Link>
-            <Link href="/digital-marketing" className="logo-light">
+            <Link href="/digital-agency" className="logo-light">
               <Image
                 priority
                 width={100}

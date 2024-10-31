@@ -7,7 +7,7 @@ export default function LogoItem() {
   return (
     <>
       <div className="header__logo-2">
-        <Link href={"/digital-marketing"} className="logo-dark">
+        <Link href={"/digital-agency"} className="logo-dark">
           <Image
             priority
             width={136}
@@ -16,7 +16,7 @@ export default function LogoItem() {
             alt="Site Logo"
           />
         </Link>
-        <Link href={"/digital-marketing"} className="logo-light">
+        <Link href={"/digital-agency"} className="logo-light">
           <Image
             priority
             width={100}
