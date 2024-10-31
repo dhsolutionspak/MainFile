@@ -1,5 +1,5 @@
 import Career2 from "../../../public/assets/imgs/career/2.jpg";
-import Career3 from "../../../public/assets/imgs/career/3.jpg";
+import Career3 from "../../../public/assets/imgs/career/3.jpeg";
 import Career4 from "../../../public/assets/imgs/career/4.jpg";
 import Career5 from "../../../public/assets/imgs/career/5.jpg";
 import Image from "next/image";
@@ -13,9 +13,9 @@ const CareerGallery = () => {
           <div className="row">
             <div className="col-xxl-12">
               <ul>
-                <li>Future</li>
-                <li>Community</li>
-                <li>Honor</li>
+                <li>Innovation</li>
+                <li>Transparency</li>
+                <li>Team Work</li>
               </ul>
               <p>
                 What sets us apart is what brings us together – a shared passion
