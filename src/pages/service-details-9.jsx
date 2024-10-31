@@ -9,11 +9,12 @@ import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
 const ServiceDetails = () => {
   return (
     <>
-      <Head>
-        <title>Service Details</title>
-        <meta name="description" content="Service Details Description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+<Head>
+    <title>Expert Computer Vision Services</title>
+    <meta name="description" content="Unlock the potential of your data with our expert computer vision services, designed to enhance image analysis, automate visual tasks, and drive insights through advanced algorithms." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+</Head>
+
       <main>
         <RootLayout header="header3" footer="footer3">
           <ServiceDetailsDevelopment />

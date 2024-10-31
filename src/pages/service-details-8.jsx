@@ -9,11 +9,12 @@ import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
 const ServiceDetails = () => {
   return (
     <>
-      <Head>
-        <title>Service Details</title>
-        <meta name="description" content="Service Details Description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+<Head>
+    <title>Comprehensive QA and Testing Services</title>
+    <meta name="description" content="Ensure the highest quality of your software with our comprehensive QA and testing services, designed to identify bugs, enhance performance, and deliver a seamless user experience." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+</Head>
+
       <main>
         <RootLayout header="header3" footer="footer3">
           <ServiceDetailsDevelopment />

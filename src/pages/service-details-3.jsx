@@ -10,10 +10,11 @@ const ServiceDetails = () => {
   return (
     <>
       <Head>
-        <title>Service Details</title>
-        <meta name="description" content="Service Details Description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+    <title>Expert Mobile App Development Services</title>
+    <meta name="description" content="Transform your business with innovative mobile app development services, delivering high-performance, user-friendly, and custom mobile solutions for Android and iOS platforms." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+</Head>
+
       <main>
         <RootLayout header="header3" footer="footer3">
           <ServiceDetailsDevelopment />
