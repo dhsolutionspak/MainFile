@@ -110,7 +110,7 @@ const Blog1 = () => {
                 </h4>
                 <h5>
                   <Link href="/blog-details" className="blog__title">
-                    Ways of lying to yourself about your new relationship.
+                  The­ Importance­ of­ Cybersecurity­ in­ Todays­ Digital­Landscape.
                   </Link>
                 </h5>
                 <Link href="/blog-details" className="blog__btn">
