@@ -1,14 +1,67 @@
 import animationCharCome from "@/lib/utils/animationCharCome";
 import animationWordCome from "@/lib/utils/animationWordCome";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Contact1 = () => {
   const charAnim = useRef();
   const wordAnim = useRef();
+  const [status, setStatus] = useState(null); // State to manage success/error message
+  const selectRef = useRef(null); // Create ref for the select dropdown
+
+  // Replace this array with your company's services
+  const services = [
+    "Web Development",
+    "Mobile App Development",
+    "AI/ML Solutions",
+    "Cyber Security",
+    "DEVOPS Solutions",
+    "Custom Software Development",
+    "QA & Testing",
+    "Computer Vision",
+    "Other",
+  ];
+
   useEffect(() => {
     animationCharCome(charAnim.current);
     animationWordCome(wordAnim.current);
   }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setStatus({ type: "success", message: "Email sent successfully!" });
+        e.target.reset(); // Reset the form on success
+        if (selectRef.current) {
+          selectRef.current.selectedIndex = 0; // Reset the dropdown to its default state
+        }
+      } else {
+        const result = await response.json();
+        setStatus({
+          type: "error",
+          message: result.message || "Failed to send email. Please try again.",
+        });
+      }
+    } catch (error) {
+      setStatus({
+        type: "error",
+        message: "Something went wrong. Please try again.",
+      });
+    }
+
+    // Remove the status message after 5 seconds
+    setTimeout(() => setStatus(null), 5000);
+  };
+
   return (
     <>
       <section className="contact__area-6">
@@ -25,9 +78,8 @@ const Contact1 = () => {
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="contact__text">
                 <p>
-                  {
-                    "Great! We're excited to hear from you and let's start something special togerter. call us for any inquery."
-                  }
+                  Great! We're excited to hear from you. Let's start something
+                  special together. Call us for any inquiry.
                 </p>
               </div>
             </div>
@@ -39,7 +91,7 @@ const Contact1 = () => {
                   className="sub-title-anim-top animation__word_come"
                   ref={wordAnim}
                 >
-                  {"Don't be afraid man ! "}
+                  {"Don't be afraid, man!"}
                   <br />
                   say hello
                 </h3>
@@ -60,13 +112,23 @@ const Contact1 = () => {
             </div>
             <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
               <div className="contact__form">
-                <form action="assets/mail.php" method="POST">
+                <form onSubmit={handleSubmit}>
                   <div className="row g-3">
                     <div className="col-xxl-6 col-xl-6 col-12">
-                      <input type="text" name="name" placeholder="Name *" />
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Name *"
+                        required
+                      />
                     </div>
                     <div className="col-xxl-6 col-xl-6 col-12">
-                      <input type="email" name="email" placeholder="Email *" />
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email *"
+                        required
+                      />
                     </div>
                   </div>
                   <div className="row g-3">
@@ -78,7 +140,40 @@ const Contact1 = () => {
                         type="text"
                         name="subject"
                         placeholder="Subject *"
+                        required
                       />
+                    </div>
+                  </div>
+                  <div className="row g-3">
+                    <div className="col-xxl-6 col-xl-6 col-12">
+                      <input
+                        type="text"
+                        name="company"
+                        placeholder="Company Name"
+                      />
+                    </div>
+                    <div className="col-xxl-6 col-xl-6 col-12">
+                      <select
+                        name="services"
+                        ref={selectRef} // Attach ref to the select element
+                        required
+                        style={{
+                          width: "100%", // Ensures the dropdown takes full width
+                          padding: "12px", // Matches the input field height
+                          fontSize: "16px", // Matches font size of input fields
+                          borderRadius: "5px", // Ensures rounded corners
+                          border: "1px solid #ccc", // Adds border similar to input fields
+                        }}
+                      >
+                        <option value="" disabled selected>
+                          Select a service *
+                        </option>
+                        {services.map((service, index) => (
+                          <option key={index} value={service}>
+                            {service}
+                          </option>
+                        ))}
+                      </select>
                     </div>
                   </div>
                   <div className="row g-3">
@@ -86,13 +181,17 @@ const Contact1 = () => {
                       <textarea
                         name="message"
                         placeholder="Messages *"
+                        required
                       ></textarea>
                     </div>
                   </div>
                   <div className="row g-3">
                     <div className="col-12">
                       <div className="btn_wrapper">
-                        <button className="wc-btn-primary btn-hover btn-item">
+                        <button
+                          type="submit"
+                          className="wc-btn-primary btn-hover btn-item"
+                        >
                           <span></span> Send <br />
                           Messages <i className="fa-solid fa-arrow-right"></i>
                         </button>
@@ -100,6 +199,16 @@ const Contact1 = () => {
                     </div>
                   </div>
                 </form>
+                {status && (
+                  <p
+                    style={{
+                      color: status.type === "success" ? "green" : "red",
+                      marginTop: "10px",
+                    }}
+                  >
+                    {status.message}
+                  </p>
+                )}
               </div>
             </div>
           </div>
