@@ -53,19 +53,24 @@ const DigitalAgencyHero = () => {
 
   return (
     <>
-      <section className="custom-hero__area">
-        {/* Background Video */}
-        <div className="custom-background-video">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/_r7DhgigrQU?autoplay=1&mute=1&loop=1&playlist=_r7DhgigrQU&modestbranding=1&showinfo=0&controls=0"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+  <section className="custom-hero__area">
+  {/* Background Video */}
+  <div className="custom-background-video">
+    <video
+      width="100%"
+      height="100%"
+      autoPlay
+      muted
+      loop
+      playsInline
+    >
+      <source 
+        src="https://wgjf7hz3r4lmyyzq.public.blob.vercel-storage.com/high-tech-ai-robot-model-4k-2023-11-27-05-31-23-utc-sLYcJ1N7JJH9rl7NCT2MUGJgw7PCYo.mp4" 
+        type="video/mp4" 
+      />
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
         <div className="container">
           <div className="row">
