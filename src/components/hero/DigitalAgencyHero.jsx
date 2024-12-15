@@ -53,12 +53,11 @@ const DigitalAgencyHero = () => {
 
   return (
     <>
-  <section className="custom-hero__area">
+<section className="custom-hero__area">
   {/* Background Video */}
   <div className="custom-background-video">
     <video
-      width="100%"
-      height="100%"
+      className="background-video"
       autoPlay
       muted
       loop
@@ -71,6 +70,8 @@ const DigitalAgencyHero = () => {
       Your browser does not support the video tag.
     </video>
   </div>
+</section>
+
 
         <div className="container">
           <div className="row">
@@ -115,6 +116,27 @@ const DigitalAgencyHero = () => {
       </section>
 
       <style jsx>{`
+
+      .custom-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Send the video to the background */
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire area without distortion */
+}
+
         .custom-hero__area {
           position: relative;
           overflow: hidden;
@@ -125,24 +147,6 @@ const DigitalAgencyHero = () => {
           justify-content: center;
         }
 
-        .custom-background-video {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 0;
-          overflow: hidden;
-        }
-
-        .custom-background-video iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
 
         .custom-hero__content {
           position: relative;
