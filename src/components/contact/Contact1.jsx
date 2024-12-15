@@ -52,7 +52,7 @@ const Contact1 = () => {
                   </li>
                   <li>
                     <span>
-                    1309 Coffeen Ave. Sheridan, Wyoming , <br /> (USA) 82801
+                      1309 Coffeen Ave. Sheridan, Wyoming , <br /> (USA) 82801
                     </span>
                   </li>
                 </ul>
