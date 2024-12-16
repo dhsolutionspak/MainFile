@@ -71,14 +71,14 @@ const Contact1 = () => {
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title-2 animation__char_come" ref={charAnim}>
-                  Let’s get in touch
+                  Lets get in touch
                 </h2>
               </div>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="contact__text">
                 <p>
-                  Great! We're excited to hear from you. Let's start something
+                  Great! Were excited to hear from you. Lets start something
                   special together. Call us for any inquiry.
                 </p>
               </div>
@@ -97,7 +97,7 @@ const Contact1 = () => {
                 </h3>
                 <ul>
                   <li>
-                    <a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a>
+                    <a href="tel:+(2)578365379">+(92) 330 - 7474 - 614</a>
                   </li>
                   <li>
                     <a href="mailto:hello@dhsol.net">hello@dhsol.net</a>
