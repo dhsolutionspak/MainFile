@@ -77,7 +77,7 @@ const Contact1 = () => {
           <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
             <div className="contact__text">
               <p>
-                Great! Were excited to hear from you. Lets start something
+                Great! We are excited to hear from you. Lets start something
                 special together. Call us for any inquiry.
               </p>
             </div>
@@ -90,7 +90,7 @@ const Contact1 = () => {
                 className="sub-title-anim-top animation__word_come"
                 ref={wordAnim}
               >
-                {"Don\u0027t be afraid, man!"}
+                {"Dont be afraid, man!"}
                 <br />
                 say hello
               </h3>
