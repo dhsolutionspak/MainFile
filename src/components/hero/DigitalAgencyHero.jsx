@@ -53,24 +53,14 @@ const DigitalAgencyHero = () => {
 
   return (
     <>
-<section className="custom-hero__area">
-  {/* Background Video */}
-  <div className="custom-background-video">
-    <video
-      className="background-video"
-      autoPlay
-      muted
-      loop
-      playsInline
-    >
-      <source 
-        src="https://wgjf7hz3r4lmyyzq.public.blob.vercel-storage.com/high-tech-ai-robot-model-4k-2023-11-27-05-31-23-utc-sLYcJ1N7JJH9rl7NCT2MUGJgw7PCYo.mp4" 
-        type="video/mp4" 
-      />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
+      <section className="custom-hero__area">
+        {/* Background Video */}
+        <div className="custom-background-video">
+          <video className="background-video" autoPlay muted loop playsInline>
+            <source src="https://vibeatcdn-2.b-cdn.net/high-tech-ai-robot-model-4k-2023-11-27-05-31-23-utc.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
         <div className="container">
           <div className="row">
@@ -115,26 +105,25 @@ const DigitalAgencyHero = () => {
       </section>
 
       <style jsx>{`
+        .custom-background-video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          z-index: -1; /* Send the video to the background */
+        }
 
-      .custom-background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1; /* Send the video to the background */
-}
-
-.background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire area without distortion */
-}
+        .background-video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensures the video covers the entire area without distortion */
+        }
 
         .custom-hero__area {
           position: relative;
@@ -145,7 +134,6 @@ const DigitalAgencyHero = () => {
           align-items: center;
           justify-content: center;
         }
-
 
         .custom-hero__content {
           position: relative;

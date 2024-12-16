@@ -525,6 +525,76 @@
   color: #25d366;
   cursor: pointer;
 }
+/* Global Styles or Scoped Styles for Location Component */
+
+.location-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 95%;
+  margin: 0 auto;
+}
+.location-section h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in one row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image img {
+  width: 6rem;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 cards per row on tablet screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* 1 card per row on mobile screens */
+  }
+}
+
 /* #whatsapp-float {
   position: fixed;
   bottom: 5%;

@@ -106,6 +106,15 @@ const DigitalAgency = () => {
           <AboutTestimonial />
           <DigitalAgencyCTA />
         </RootLayout>
+        <script
+          async
+          type="module"
+          src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"
+        ></script>
+        <zapier-interfaces-chatbot-embed
+          is-popup="true"
+          chatbot-id="cm4qeddzy003413zgchhof6qa"
+        ></zapier-interfaces-chatbot-embed>
       </main>
 
       {/* Modal 1 */}

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import RootLayout from "@/components/common/layout/RootLayout";
 import Contact1 from "@/components/contact/Contact1";
-
+import Location from "@/components/contact/Location";
 const Contact = () => {
   return (
     <>
@@ -13,6 +13,8 @@ const Contact = () => {
       <main>
         <RootLayout header="header3" footer="footer3">
           <Contact1 />
+
+          <Location />
         </RootLayout>
       </main>
     </>
