@@ -65,7 +65,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                 />
               </Link>
             </div>
-            <div className="offcanvas__social">
+            <div className="offcanvas__social" style={{ paddingTop: "135px" }}>
               <h3 className="social-title">Follow Us</h3>
               <ul>
                 <li>
@@ -87,7 +87,10 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
             </div>
           </div>
           <div className="offcanvas__mid">
-            <div className="offcanvas__menu-wrapper">
+            <div
+              className="offcanvas__menu-wrapper"
+              style={{ display: "flex", alignItems: "center", height: "100vh" }}
+            >
               <nav className="offcanvas__menu">
                 <ul className="menu-anim title" ref={headerTitle}>
                   <li>
@@ -128,15 +131,22 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
             </div>
           </div>
           <div className="offcanvas__right">
-            <div className="offcanvas__search">
-              <form action="#">
-                {/* <input type="text" name="search" placeholder="Search keyword" />
+            {/* <div className="offcanvas__search"> */}
+            {/* <form action="#"> */}
+            {/* <input type="text" name="search" placeholder="Search keyword" />
                 <button>
                   <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
                 </button> */}
-              </form>
-            </div>
-            <div className="offcanvas__contact">
+            {/* </form> */}
+            {/* </div> */}
+            <div
+              className="offcanvas__contact"
+              style={{
+                height: "100vh",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
               <h3>Get in touch</h3>
               <ul>
                 <li>

@@ -12,10 +12,6 @@ import Header2 from "@/components/header/Header2";
 import Header3 from "@/components/header/Header3";
 import Header4 from "@/components/header/Header4";
 import Header5 from "@/components/header/Header5";
-import Footer2 from "@/components/footer/Footer2";
-import Footer3 from "@/components/footer/Footer3";
-import Footer4 from "@/components/footer/Footer4";
-import Footer5 from "@/components/footer/Footer5";
 
 const HeaderContent = ({ header, navData }) => {
   if (header == "header1") {
@@ -32,23 +28,6 @@ const HeaderContent = ({ header, navData }) => {
     return "";
   } else {
     return <Header3 />;
-  }
-};
-const FooterContent = ({ footer }) => {
-  if (footer == "footer1") {
-    return <Footer1 />;
-  } else if (footer == "footer2") {
-    return <Footer2 />;
-  } else if (footer == "footer3") {
-    return <Footer3 />;
-  } else if (footer == "footer4") {
-    return <Footer4 />;
-  } else if (footer == "footer5") {
-    return <Footer5 />;
-  } else if (footer == "none") {
-    return "";
-  } else {
-    return <Footer3 />;
   }
 };
 
@@ -94,7 +73,7 @@ export default function RootLayout({
         <div id="smooth-wrapper">
           <div id="smooth-content">
             {children}
-            <FooterContent footer={footer} />
+            <Footer1 />
           </div>
         </div>
       </CommonAnimation>

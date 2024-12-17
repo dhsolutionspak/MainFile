@@ -96,7 +96,7 @@ const Contact1 = () => {
               </h3>
               <ul>
                 <li>
-                  <a href="tel:+(2)578365379">+(92) 3307474614 </a>
+                  <a href="https://wa.me/19255589107">(+1) 925 558 9107</a>
                 </li>
                 <li>
                   <a href="mailto:hello@dhsol.net">hello@dhsol.net</a>

@@ -88,19 +88,22 @@ const DigitalAgencyHero = () => {
                     technology.
                   </p>
                 </div>
-                <Image
-                  priority
-                  width={170}
-                  style={{ height: "auto" }}
-                  src={ArrowDownBig}
-                  alt="Arrow Down Icon"
-                />
+
                 <div className="custom-experience">
                   <h2 className="title">1000+</h2>
                   <p className="custom-exp-para">
                     Projects completed <br />
                     successfully
                   </p>
+                </div>
+                <div className="cursor-btn btn_wrapper">
+                  <Link
+                    className="btn-item wc-btn-primary btn-hover"
+                    href="/contact"
+                  >
+                    <span></span> Book A Meeting{" "}
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </Link>
                 </div>
               </div>
             </div>

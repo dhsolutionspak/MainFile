@@ -10,7 +10,7 @@ export default function Footer3() {
       <footer className="footer__area">
         <div className="footer__top">
           <div className="container footer-line"></div>
-            
+
           <Image
             priority
             width={1160}
@@ -40,28 +40,22 @@ export default function Footer3() {
                     </p>
                     <ul className="footer__social">
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/dhsolutions.official/">
                           <span>
                             <i className="fa-brands fa-facebook-f"></i>
                           </span>
                         </a>
                       </li>
+
                       <li>
-                        <a href="#">
-                          <span>
-                            <i className="fa-brands fa-twitter"></i>
-                          </span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/dhsolutions.official/">
                           <span>
                             <i className="fa-brands fa-instagram"></i>
                           </span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://pk.linkedin.com/company/dhsolutionspakistan">
                           <span>
                             <i className="fa-brands fa-linkedin"></i>
                           </span>
@@ -94,17 +88,14 @@ export default function Footer3() {
                   <div className="footer__widget-3">
                     <h2 className="footer__widget-title">Contact Us</h2>
                     <ul className="footer__contact">
-                      <li>1309 Coffeen Ave. Sheridan, Wyoming ,
-                      USA 82801</li>
+                      <li>1309 Coffeen Ave. Sheridan, Wyoming , USA 82801</li>
                       <li>
-                        <a href="tel:+923146455565" className="phone">
-                          (+92) 330 - 7474 - 614{" "}
+                        <a href="https://wa.me/19255589107">
+                          (+1) 925 558 9107
                         </a>
                       </li>
                       <li>
-                        <a href="mailto:hello@dhsol.net">
-                          hello@dhsol.net
-                        </a>
+                        <a href="mailto:hello@dhsol.net">hello@dhsol.net</a>
                       </li>
                     </ul>
                   </div>
@@ -130,11 +121,11 @@ export default function Footer3() {
                     <p>
                       © 2022 - 2025 | Alrights reserved by{" "}
                       <a href="https:/dhsol.net/" target="_blank">
-                        DH Solutions LLC 
+                        DH Solutions LLC
                       </a>
                     </p>
                   </div>
-
+                  {/* 
                   <div className="footer__subscribe">
                     <form action="#">
                       <input
@@ -146,7 +137,7 @@ export default function Footer3() {
                         <i className="fa-solid fa-paper-plane"></i>
                       </button>
                     </form>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
