@@ -4,7 +4,6 @@ import Link from "next/link";
 import Author from "../../../public/assets/imgs/blog/detail/author.png";
 import Detail1 from "../../../public/assets/imgs/blog/detail/1.jpg"; // Update this with a relevant image for cybersecurity
 import Detail2 from "../../../public/assets/imgs/blog/detail/2.jpg"; // Update this with a relevant image for cybersecurity
-import Detail3 from "../../../public/assets/imgs/blog/detail/3.jpg"; // Update this with a relevant image for cybersecurity
 import { useEffect, useRef } from "react";
 import animationWordCome from "@/lib/utils/animationWordCome";
 
@@ -39,12 +38,16 @@ const BlogDetails1 = () => {
                   <div className="blog__detail-meta">
                     <Image
                       priority
-                      style={{ width: "auto", height: "auto" }}
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        borderRadius: "50%",
+                      }}
                       src={Author}
                       alt="Author Picture"
                     />
                     <p>
-                      Written by <span>Codexpand</span>
+                      Written by <span>DH Solutions</span>
                     </p>
                   </div>
                   <div className="blog__detail-meta">
@@ -69,17 +72,17 @@ const BlogDetails1 = () => {
             <div className="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
               <div className="blog__detail-content">
                 <p>
-                  In our increasingly connected world, cybersecurity has become a
-                  critical concern for individuals and organizations alike. With
-                  the rapid advancement of technology and the rising sophistication
-                  of cyber threats, understanding and implementing effective
-                  cybersecurity measures is essential.
+                  In our increasingly connected world, cybersecurity has become
+                  a critical concern for individuals and organizations alike.
+                  With the rapid advancement of technology and the rising
+                  sophistication of cyber threats, understanding and
+                  implementing effective cybersecurity measures is essential.
                 </p>
                 <p>
                   Cybersecurity safeguards sensitive data such as personal
                   information, financial records, and intellectual property. A
-                  breach can lead to identity theft, financial loss, and damage to
-                  an organization’s reputation.
+                  breach can lead to identity theft, financial loss, and damage
+                  to an organization’s reputation.
                 </p>
                 <Image
                   priority
@@ -90,10 +93,11 @@ const BlogDetails1 = () => {
                 />
                 <h2>Common Cyber Threats</h2>
                 <p>
-                  Cyberattacks can have devastating financial implications. The cost
-                  of recovering from a data breach can be astronomical, not to
-                  mention the potential legal liabilities and fines that may arise
-                  from non-compliance with regulations like GDPR and HIPAA.
+                  Cyberattacks can have devastating financial implications. The
+                  cost of recovering from a data breach can be astronomical, not
+                  to mention the potential legal liabilities and fines that may
+                  arise from non-compliance with regulations like GDPR and
+                  HIPAA.
                 </p>
                 <h2>Best Practices for Cybersecurity</h2>
                 <p>

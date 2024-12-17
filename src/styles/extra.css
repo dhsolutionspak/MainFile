@@ -1,5 +1,6 @@
 .offcanvas__menu {
-  padding-top: 142px;
+  padding-top: 0px;
+  margin-block: 1.5rem;
 }
 .header_title {
   width: 100%;
@@ -22,7 +23,7 @@
 }
 
 .header_title > a {
-  font-size: 80px;
+  font-size: 55px;
   padding: 20px 0 20px 100px;
   line-height: 1;
   -webkit-transform: translateY(var(--y)) translateZ(0);

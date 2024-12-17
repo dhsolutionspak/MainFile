@@ -137,6 +137,24 @@ const Team1 = () => {
                 </Link>
               </div>
             </SwiperSlide>
+            <SwiperSlide>
+              <div className="team__slide">
+                <Link href="/team-details">
+                  <Image
+                    priority
+                    style={{ width: "100%", height: "auto" }}
+                    src={Team13}
+                    alt="Team Member"
+                  />
+                  <div className="team__info">
+                    <h4 className="team__member-name-6">Muhammad Muzzammil</h4>
+                    <h5 className="team__member-role-6">
+                      CHIEF TECHNOLOGY OFFICER
+                    </h5>
+                  </div>
+                </Link>
+              </div>
+            </SwiperSlide>
 
             <SwiperSlide>
               <div className="team__slide">
@@ -183,7 +201,9 @@ const Team1 = () => {
                   />
                   <div className="team__info">
                     <h4 className="team__member-name-6">Ayesha Amjad</h4>
-                    <h5 className="team__member-role-6">Head of Branding & Marketing</h5>
+                    <h5 className="team__member-role-6">
+                      Head of Branding & Marketing
+                    </h5>
                   </div>
                 </Link>
               </div>
@@ -200,12 +220,27 @@ const Team1 = () => {
                   />
                   <div className="team__info">
                     <h4 className="team__member-name-6">Saymon D. Halk</h4>
-                    <h5 className="team__member-role-6">Country Head  UK </h5>
+                    <h5 className="team__member-role-6">Country Head UK </h5>
                   </div>
                 </Link>
               </div>
             </SwiperSlide>
- 
+            <SwiperSlide>
+              <div className="team__slide">
+                <Link href="/team-details">
+                  <Image
+                    priority
+                    style={{ width: "100%", height: "auto" }}
+                    src={Team13}
+                    alt="Team Member"
+                  />
+                  <div className="team__info">
+                    <h4 className="team__member-name-6">Saymon D. Halk</h4>
+                    <h5 className="team__member-role-6">Country Head UK </h5>
+                  </div>
+                </Link>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
 

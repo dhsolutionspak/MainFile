@@ -19,7 +19,6 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
           let firstParent = rootParent[i].children;
           for (let j = 0; j < firstParent.length; j++) {
             if (firstParent[j].className.includes("header_title")) {
-
               let arr = firstParent[j].children[0].textContent.split("");
               let spanData = "";
               for (let k = 0; k < arr.length; k++) {
@@ -70,38 +69,19 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
               <h3 className="social-title">Follow Us</h3>
               <ul>
                 <li>
-                  <a href="#">Dribbble</a>
+                  <a href="https://www.instagram.com/dhsolutions.official/">
+                    Instagram
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Behance</a>
+                  <a href="https://www.facebook.com/dhsolutions.official/">
+                    Facebook
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Instagram</a>
-                </li>
-                <li>
-                  <a href="#">Facebook</a>
-                </li>
-                <li>
-                  <a href="#">Twitter</a>
-                </li>
-                <li>
-                  <a href="#">YouTube</a>
-                </li>
-              </ul>
-            </div>
-            <div className="offcanvas__links">
-              <ul>
-                <li>
-                  <Link href="/about">About</Link>
-                </li>
-                <li>
-                  <Link href="/contact">contact</Link>
-                </li>
-                <li>
-                  <Link href="/career">Career</Link>
-                </li>
-                <li>
-                  <Link href="/blog">blog</Link>
+                  <a href="https://pk.linkedin.com/company/dhsolutionspakistan">
+                    LinkedIn
+                  </a>
                 </li>
               </ul>
             </div>
@@ -111,10 +91,9 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
               <nav className="offcanvas__menu">
                 <ul className="menu-anim title" ref={headerTitle}>
                   <li>
-                  <div className="header_title">
+                    <div className="header_title">
                       <Link href={"/home"}>HOME</Link>
                     </div>
-
 
                     <div className="header_title">
                       <Link href={"/about"}>ABOUT</Link>
@@ -151,23 +130,22 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
           <div className="offcanvas__right">
             <div className="offcanvas__search">
               <form action="#">
-                <input type="text" name="search" placeholder="Search keyword" />
+                {/* <input type="text" name="search" placeholder="Search keyword" />
                 <button>
                   <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
-                </button>
+                </button> */}
               </form>
             </div>
             <div className="offcanvas__contact">
               <h3>Get in touch</h3>
               <ul>
                 <li>
-                  <a href="tel:02094980547">(+92) - 330 7474 614</a>
+                  <a href="https://wa.me/19255589107">(+1) 925 558 9107</a>
                 </li>
                 <li>
                   <a href="mailto:hello@dhsol.net">hello@dhsol.net</a>
                 </li>
-                <li>1309 Coffeen Ave. Sheridan, Wyoming , USA 82801
-                </li>
+                <li>1309 Coffeen Ave. Sheridan, Wyoming , USA 82801</li>
               </ul>
             </div>
             <Image

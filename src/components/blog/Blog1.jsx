@@ -110,7 +110,8 @@ const Blog1 = () => {
                 </h4>
                 <h5>
                   <Link href="/blog-details" className="blog__title">
-                  The­ Importance­ of­ Cybersecurity­ in­ Todays­ Digital­Landscape.
+                    The­ Importance­ of­ Cybersecurity­ in­ Todays­
+                    Digital­Landscape.
                   </Link>
                 </h5>
                 <Link href="/blog-details" className="blog__btn">
