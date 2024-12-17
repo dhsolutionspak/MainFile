@@ -25,7 +25,7 @@ const Location = () => {
             />
           </div>
           <h3>Pakistan</h3>
-          <p>1140 6th Avenue ,fl 9th New York NY 10036</p>
+          <p>Park Road , Near Chak Shahzad Islamabad Pakistan</p>
         </div>
         {/* Card 2 */}
         <div className="card">
@@ -38,7 +38,7 @@ const Location = () => {
             />
           </div>
           <h3>Kuwait</h3>
-          <p>1140 6th Avenue ,fl 9th New York NY 10036</p>
+          <p>Street: P O Box: 6648 Salmiya, 22077</p>
         </div>
         {/* Card 3 */}
         <div className="card">
@@ -51,7 +51,7 @@ const Location = () => {
             />
           </div>
           <h3>USA California</h3>
-          <p>1140 6th Avenue ,fl 9th New York NY 10036</p>
+          <p>339 South Blue Spring Avenue Oxnard, CA 93030</p>
         </div>
         {/* Card 4 */}
         <div className="card">
@@ -64,7 +64,7 @@ const Location = () => {
             />
           </div>
           <h3>Saudi Arab</h3>
-          <p>1140 6th Avenue ,fl 9th New York NY 10036</p>
+          <p>Street King Abdulaziz Rd, As Safra</p>
         </div>
         {/* Card 5 */}
         <div className="card">
@@ -72,7 +72,7 @@ const Location = () => {
             <Image src={USAYoming} alt="USA Map" width={50} height={50} />
           </div>
           <h3>USA Wyoming</h3>
-          <p>1140 6th Avenue ,fl 9th New York NY 10036</p>
+          <p>1309 Coffeen Avenue STE 13600 Sheridan Wyoming 82801</p>
         </div>
         {/* Card 6 */}
         <div className="card">
@@ -85,7 +85,7 @@ const Location = () => {
             />
           </div>
           <h3>United Kingdom</h3>
-          <p>1140 6th Avenue ,fl 9th New York NY 10036</p>
+          <p>Vogue House, 1 Hanover Square Mayfair</p>
         </div>
       </div>
     </section>
