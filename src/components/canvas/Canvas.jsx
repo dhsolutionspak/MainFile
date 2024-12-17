@@ -144,7 +144,8 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
               style={{
                 height: "100vh",
                 display: "flex",
-                alignItems: "center",
+                flexDirection: "column",
+                justifyContent: "center",
               }}
             >
               <h3>Get in touch</h3>
