@@ -25,7 +25,9 @@ const Career1 = () => {
                       <div className="job__item">
                         <p className="job__no">{index + 1}</p>
                         <h3 className="job__title">{job.title}</h3>
-                        <h4 className="job__open">({job.openRoles} Open Roles)</h4>
+                        <h4 className="job__open">
+                          ({job.openRoles} Open Roles)
+                        </h4>
                         <div className="job__link">
                           <span>
                             <i className="fa-solid fa-arrow-right"></i>
@@ -39,8 +41,8 @@ const Career1 = () => {
                 <div className="no-jobs">
                   <p>No job openings are available at the moment.</p>
                   <p>
-                    If you’re interested in working with us, please send your resume to{" "}
-                    <a href="mailto:hr@dhsol.net">hr@dhsol.net</a>.
+                    If you’re interested in working with us, please send your
+                    resume to <a href="mailto:hr@dhsol.net">hr@dhsol.net</a>.
                   </p>
                 </div>
               )}

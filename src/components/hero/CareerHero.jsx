@@ -1,5 +1,6 @@
 import animationCharCome from "@/lib/utils/animationCharCome";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 const CareerHero = () => {
   const charAnim = useRef();
@@ -24,14 +25,14 @@ const CareerHero = () => {
               </div>
               <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-3">
                 <div className="btn_wrapper">
-                  <a
-                    href="#job_list"
+                  <Link
+                    href="/contact"
                     className="wc-btn-secondary btn-hover btn-item"
                   >
-                    <span></span> Explore job
+                    <span></span> Lets Talk
                     <br />
-                    vacancies <i className="fa-solid fa-arrow-right"></i>
-                  </a>
+                    Us <i className="fa-solid fa-arrow-right"></i>
+                  </Link>
                 </div>
               </div>
             </div>

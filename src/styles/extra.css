@@ -579,6 +579,14 @@ p {
   color: #666;
   margin-top: 5px;
 }
+.text-center {
+  text-align: center;
+  width: 432px;
+}
+.teamDetailSec {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {

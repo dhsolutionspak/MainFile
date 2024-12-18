@@ -1,7 +1,7 @@
 import Head from "next/head";
 import RootLayout from "@/components/common/layout/RootLayout";
 import BlogDetails1 from "@/components/blog/BlogDetails1";
-import BlogRelated from "@/components/blog/BlogRelated";
+// import BlogRelated from "@/components/blog/BlogRelated";
 import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
 
 const BlogDetails = () => {
@@ -13,9 +13,9 @@ const BlogDetails = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <RootLayout header="header3" footer="footer3">
+        <RootLayout header="header3">
           <BlogDetails1 />
-          <BlogRelated />
+          {/* <BlogRelated /> */}
           <DigitalAgencyCTA />
         </RootLayout>
       </main>

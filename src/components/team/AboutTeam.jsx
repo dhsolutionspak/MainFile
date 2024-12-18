@@ -1,10 +1,10 @@
 import { FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gsap } from "gsap";
-import Team1 from "../../../public/assets/imgs/team/1.jpg";
-import Team2 from "../../../public/assets/imgs/team/2.jpg";
-import Team3 from "../../../public/assets/imgs/team/3.jpg";
-import Team4 from "../../../public/assets/imgs/team/4.jpg";
+import Team1 from "../../../public/assets/imgs/team/1.svg";
+import Team2 from "../../../public/assets/imgs/team/2.svg";
+import Team3 from "../../../public/assets/imgs/team/3.svg";
+// import Team4 from "../../../public/assets/imgs/team/4.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -132,59 +132,10 @@ const AboutTeam = () => {
                     alt="Team Member"
                   />
                   <div className="team__info">
-                    <h4 className="team__member-name">Jawad Muhaiiudin</h4>
-                    <h5 className="team__member-role">Head of MENA Region</h5>
-                  </div>
-                </Link>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="team__slide">
-                <Link href="/team-details">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team4}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Ganero Chille</h4>
-                    <h5 className="team__member-role">Head of US Region</h5>
-                  </div>
-                </Link>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="team__slide">
-                <Link href="/team-details">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team2}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Saymon D. Halk</h4>
-                    <h5 className="team__member-role">Country Head UK</h5>
-                  </div>
-                </Link>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="team__slide">
-                <Link href="/team-details">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team3}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Ayesha Amjad</h4>
-                    <h5 className="team__member-role">Head of Branding & Marketing </h5>
+                    <h4 className="team__member-name">Muhammad Muzzammil</h4>
+                    <h5 className="team__member-role">
+                      CHEIF TECHNOLOGY OFFICER
+                    </h5>
                   </div>
                 </Link>
               </div>
