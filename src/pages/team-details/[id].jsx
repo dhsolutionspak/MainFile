@@ -1,20 +1,51 @@
-import { useRouter } from "next/router";
+// pages/team-details/[id].jsx
+import RootLayout from "@/components/common/layout/RootLayout";
+import TeamCounter from "@/components/counter/TeamCounter";
+import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
+import AboutTeam from "@/components/team/AboutTeam";
+import TeamDetails1 from "@/components/team/TeamDetails1";
 import teamData from "@/data/teamData";
-import TeamDetails from "../team-details";
+import Head from "next/head";
 
-const TeamDetailsPage = () => {
-  const router = useRouter();
-  const { id } = router.query;
+export async function getStaticPaths() {
+  const paths = teamData.map((member) => ({
+    params: { id: member.id },
+  }));
+  return { paths, fallback: "blocking" }; // Use blocking fallback for missing data
+}
 
-  // Find the team member based on the ID
-  const member = teamData.find((item) => item.id.toString() === id);
+export async function getStaticProps({ params }) {
+  const member = teamData.find((m) => m.id === params.id);
 
   if (!member) {
-    return <p>Loading...</p>; // Handle case when member is not found
+    return { notFound: true }; // Return 404 if no matching member is found
   }
 
-  // Pass the member data to TeamDetails
-  return <TeamDetails member={member} />;
-};
+  return {
+    props: { member },
+  };
+}
 
-export default TeamDetailsPage;
+export default function TeamDetails({ member }) {
+  return member ? (
+    <>
+      <div>
+        <Head>
+          <title>Team</title>
+          <meta name="description" content="Team Description" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Head>
+        <main>
+          <RootLayout header="header3">
+            <TeamDetails1 member={member} />
+            <TeamCounter />
+
+            <DigitalAgencyCTA />
+          </RootLayout>
+        </main>
+      </div>
+    </>
+  ) : (
+    <div>Loading...</div>
+  );
+}

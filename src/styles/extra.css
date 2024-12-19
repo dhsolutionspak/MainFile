@@ -587,7 +587,6 @@ p {
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
-
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .card-grid {

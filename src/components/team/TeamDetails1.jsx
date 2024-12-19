@@ -21,10 +21,11 @@ const TeamDetails1 = ({ member }) => {
             <div className="team__member-img">
               <Image
                 priority
-                style={{ width: "100%", height: "102%" }}
-                src={member.image}
-                alt={`${member.name} Picture`}
+                src={member.image || "/assets/imgs/team/1.svg"}
+                alt={`${member.name} Picture` || "Team Member Picture"}
                 data-speed="0.5"
+                width={100}
+                height={100}
               />
             </div>
           </div>

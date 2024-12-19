@@ -1,15 +1,10 @@
-// data/teamData.js
-import Team11 from "../../public/assets/imgs/team/1.svg";
-import Team12 from "../../public/assets/imgs/team/2.svg";
-import Team13 from "../../public/assets/imgs/team/3.svg";
-
 const teamData = [
   {
-    id: 1,
+    id: "1",
     name: "Mudassir Jaleel",
     role: "Founder & CEO",
     company: "DH Solutions",
-    image: Team11, // Replace with the actual image path
+    image: "/assets/imgs/team/1.svg", // Replace with the actual image path
     bio: [
       {
         heading: "Early Journey of DH Solutions",
@@ -44,11 +39,11 @@ const teamData = [
     ],
   },
   {
-    id: 2,
+    id: "2",
     name: "Mohsin Jaleel",
     role: "Chief Operating Officer (COO)",
     company: "DH Solutions",
-    image: Team12, // Replace with the actual image path
+    image: "/assets/imgs/team/2.svg", // Replace with the actual image path
     bio: [
       {
         heading: "Role and Responsibilities",
@@ -83,11 +78,50 @@ const teamData = [
     ],
   },
   {
-    id: 3,
+    id: "3",
     name: "Muhammad Muzammil",
     role: "Chief Technology Officer (CTO)",
     company: "DH Solutions",
-    image: Team13, // Replace with the actual image path
+    image: "/assets/imgs/team/3.svg",
+    bio: [
+      {
+        heading: "Role and Responsibilities",
+        content:
+          "As CTO, Muhammad Muzammil drives the technological vision of DH Solutions. His key responsibilities include overseeing R&D, guiding product development, and mentoring teams to ensure the company remains at the forefront of AI and software engineering.",
+      },
+      {
+        heading: "A Technological Visionary",
+        content:
+          "Muzzammil has led the development of AI-powered tools and advanced software solutions that have set benchmarks in efficiency, scalability, and security. His expertise has been pivotal in DH Solutions' growth, including its expansion into the MENA market.",
+      },
+      {
+        heading: "Leadership Philosophy",
+        content:
+          "Muzzammil believes in continuous learning, problem-solving, and collaboration. He fosters a culture of innovation, empowering his team to embrace new technologies and solve complex challenges.",
+      },
+      {
+        heading: "Vision for DH Solutions",
+        content:
+          "Muhammad Muzammil envisions DH Solutions as a leader in AI development, digital transformation, and staff augmentation technologies. His goal is to create future-proof solutions that address both current challenges and emerging opportunities.",
+      },
+      {
+        heading: "A Message from the CTO",
+        content:
+          "At DH Solutions, we aim to harness the power of technology to drive progress and deliver value. My goal is to create innovative, sustainable, and impactful solutions that empower businesses to thrive in an ever-changing digital landscape.  — Muhammad Muzammil",
+      },
+    ],
+    socials: [
+      { icon: "facebook-f", link: "https://www.facebook.com/dev.muzzammil" },
+      { icon: "instagram", link: "https://www.instagram.com/mk_muzzammil786/" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/mk-muzzammil/" },
+    ],
+  },
+  {
+    id: "4",
+    name: "Jawad",
+    role: "Client Relations Manager",
+    company: "DH Solutions",
+    image: "/assets/imgs/team/4.jpeg",
     bio: [
       {
         heading: "Role and Responsibilities",

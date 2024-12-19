@@ -8,9 +8,10 @@ const TeamMemberCard = ({ member }) => {
       <Link href={`/team-details/${member.id}`}>
         <Image
           priority
-          style={{ width: "432px", height: "550px", borderRadius: "100%" }}
-          src={member.image}
-          alt={member.name}
+          src={member.image || "/assets/imgs/team/1.svg"}
+          alt={member.name || "Team Member"}
+          width={432}
+          height={550}
         />
         <div className="team__info text-center">
           <h4 className="team__member-name-6">{member.name}</h4>

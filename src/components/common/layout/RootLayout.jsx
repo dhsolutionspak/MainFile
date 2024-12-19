@@ -34,7 +34,6 @@ const HeaderContent = ({ header, navData }) => {
 export default function RootLayout({
   children,
   header = "",
-  footer = "",
   defaultMode = "",
 }) {
   const [mode, setMode] = useState(defaultMode);

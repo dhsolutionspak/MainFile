@@ -1,18 +1,16 @@
 import { FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gsap } from "gsap";
-import Team1 from "../../../public/assets/imgs/team/1.svg";
-import Team2 from "../../../public/assets/imgs/team/2.svg";
-import Team3 from "../../../public/assets/imgs/team/3.svg";
-// import Team4 from "../../../public/assets/imgs/team/4.jpg";
+
+import teamData from "@/data/teamData";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
-import Link from "next/link";
-import Image from "next/image";
 
-const AboutTeam = () => {
+import TeamMemberCard from "./TeamMemberCard";
+
+const AboutTeam = ({ member }) => {
   if (typeof window !== "undefined") {
     document.addEventListener("mousemove", mousemoveHandler);
   }
@@ -66,6 +64,11 @@ const AboutTeam = () => {
         <div className="sec-title-wrapper">
           <h2 className="sec-sub-title title-anim">Our Team</h2>
           <h3 className="sec-title title-anim">How we work</h3>
+          <p>
+            We’re a diverse team that works as fancies attention to details,
+            enjoys beers on Friday nights, and aspires to design the dent in the
+            universe.
+          </p>
         </div>
 
         <div className="team__slider">
@@ -88,58 +91,11 @@ const AboutTeam = () => {
               },
             }}
           >
-            <SwiperSlide>
-              <div className="team__slide">
-                <Link href="/team-details">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team1}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Mudassir Jaleel</h4>
-                    <h5 className="team__member-role">Founder & CEO</h5>
-                  </div>
-                </Link>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="team__slide">
-                <Link href="/team-details">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team2}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Mohsin Jaleel</h4>
-                    <h5 className="team__member-role">Co Founder & COO </h5>
-                  </div>
-                </Link>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="team__slide">
-                <Link href="/team-details">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team3}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Muhammad Muzzammil</h4>
-                    <h5 className="team__member-role">
-                      CHEIF TECHNOLOGY OFFICER
-                    </h5>
-                  </div>
-                </Link>
-              </div>
-            </SwiperSlide>
+            {teamData.map((member) => (
+              <SwiperSlide key={member.id}>
+                <TeamMemberCard member={member} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </section>
